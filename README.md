@@ -8,3 +8,15 @@ None
 
 ## Problems
 Nothing works
+
+# 2. Adding express framework
+
+## Changes
+* Added .gitignore
+* Installed express
+* Set package type to "module"
+* Rewrote index.js
+* Added test.rest (for vscode REST Client extension testing)
+
+## New features
+App now accepting GET requests

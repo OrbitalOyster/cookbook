@@ -1,5 +1,9 @@
 {
   "name": "cookbook",
   "version": "0.0.1",
-  "repository": "OrbitalOyster/cookbook"
+  "repository": "OrbitalOyster/cookbook",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }

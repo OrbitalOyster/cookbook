@@ -1,0 +1,2 @@
+### All posts
+GET http://127.0.0.1:13288/posts
