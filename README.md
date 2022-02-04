@@ -18,7 +18,7 @@ Nothing works
 * Rewrote index.js
 * Added test.rest (for vscode REST Client extension testing)
 
-## New features
+## Features
 App now accepting GET requests
 
 # 3. Implementing basic REST features
@@ -34,3 +34,13 @@ App now accepting GET requests
 * Cannot store posts
 * Cannot delete posts
 * Cannot edit posts
+
+# 4. Adding basic .env configuration
+
+## Changes
+* Installed dotenv
+* Added .env and .env_sample files
+* Added npm script to run app with configuration
+
+## Features
+* Configuration file

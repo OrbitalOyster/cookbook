@@ -1,6 +1,8 @@
 "use strict";
 
 import express, { json } from "express";
+
+const port = process.env["PORT"];
 const app = express();
 
 let posts = [
@@ -25,4 +27,4 @@ app.post("/posts", (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(13288, () => console.log("Server is listening on port 13288"));
+app.listen(port, () => console.log(`Server is listening on port ${port}`));
