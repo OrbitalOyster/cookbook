@@ -1,2 +1,11 @@
 ### All posts
 GET http://127.0.0.1:13288/posts
+
+### Add new post
+POST http://127.0.0.1:13288/posts
+Content-type: application/json
+
+{
+  "title": "New post",
+  "content": "New content"
+}

@@ -20,3 +20,17 @@ Nothing works
 
 ## New features
 App now accepting GET requests
+
+# 3. Implementing basic REST features
+
+## Changes
+* JSON support
+* Added POST route
+
+## Features
+* Can now view and add posts
+
+## Problems
+* Cannot store posts
+* Cannot delete posts
+* Cannot edit posts
