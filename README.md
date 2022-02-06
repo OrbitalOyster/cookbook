@@ -44,3 +44,16 @@ App now accepting GET requests
 
 ## Features
 * Configuration file
+
+# 5. Adding mongodb connection
+
+## Changes
+* Installed mongoose
+* Added configuration to .env for mongodb connection
+* Added mongodb connection before app starts
+
+## Features
+* App now connects to mongodb
+
+## Problems
+* No graceful disconnect from mongodb
