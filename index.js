@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 
 const port = process.env["PORT"];
 const mongoUrl = process.env["MONGO_URL"];
+let server;
 const app = express();
 
 let posts = [
@@ -33,4 +34,14 @@ app.post("/posts", (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(port, () => console.log(`Server is listening on port ${port}`));
+server = app.listen(port, () => console.log(`Server is listening on port ${port}`));
+server.on("close", () => console.log("Server closed"));
+
+process.on("SIGINT", close);
+
+async function close() {
+  console.log("\nSIGINT received, shutting down...");
+  await mongoose.disconnect();
+  server.close();
+  process.exit(0);
+}

@@ -57,3 +57,16 @@ App now accepting GET requests
 
 ## Problems
 * No graceful disconnect from mongodb
+
+# 6. Adding SIGINT handling
+
+## Changes
+* Added express server variable
+* Added server SIGINT handler
+
+## Features
+* App can now properly clean up resources after receiving SIGINT
+
+## Problems
+* App now finishes with 130 status code (npm script only)
+* Express server doesn't closes in time
