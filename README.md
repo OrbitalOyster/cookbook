@@ -18,5 +18,18 @@ Nothing works
 * Rewrote index.js
 * Added test.rest (for vscode REST Client extension testing)
 
-## New features
+## Features
 App now accepting GET requests
+
+# 3. Adding basic .env configuration
+
+## Changes
+* Installed dotenv
+* Added .env and .env_sample files
+* Added npm script to run app with configuration
+
+## Features
+* Configuration file
+
+## Problems
+* App finishes with exit code 130

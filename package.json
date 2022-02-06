@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "repository": "OrbitalOyster/cookbook",
   "type": "module",
+  "scripts": {
+    "start": "echo \"Running...\" && node -r dotenv/config . && echo \"Done\""
+  },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.2"
   }
 }
