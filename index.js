@@ -9,4 +9,20 @@ app.get("/posts", (req, res) => {
   res.send("Hello, World!");
 });
 
-app.listen(port, () => console.log(`Server is listening on port ${port}`));
+let server = app.listen(port, () => console.log(`Server is listening on port ${port}`));
+
+function close()
+{
+  server.close();
+  server.on("close", () => {
+    console.log("Server closed");
+    process.exit(0);
+  });
+}
+
+process.on("SIGINT", close);
+
+app.get("/close", (req, res) => {
+  res.sendStatus(200);
+  close();
+});

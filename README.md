@@ -33,3 +33,16 @@ App now accepting GET requests
 
 ## Problems
 * App finishes with exit code 130
+
+# 4. Implementing graceful closing
+
+## Changes
+* Added close() function
+* Added /close route
+
+## Features
+* App can now gracefully close
+
+## Problems
+* Can not add/edit/delete posts
+* /close is public
