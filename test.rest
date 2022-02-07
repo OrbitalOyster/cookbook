@@ -3,3 +3,12 @@ GET http://127.0.0.1:13288/posts
 
 ### Close server
 GET http://127.0.0.1:13288/close
+
+### Add new post
+POST http://127.0.0.1:13288/posts
+Content-type: application/json
+
+{
+  "title": "New post",
+  "content": "New content"
+}

@@ -46,3 +46,15 @@ App now accepting GET requests
 ## Problems
 * Can not add/edit/delete posts
 * /close is public
+
+# 5. Implementing basic REST features
+
+## Changes
+* JSON support
+* Added POST route
+
+## Features
+* Can now view and add posts
+
+## Problems
+* Changes are temporary
