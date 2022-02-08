@@ -58,3 +58,14 @@ App now accepting GET requests
 
 ## Problems
 * Changes are temporary
+
+# 6. Adding mongodb support
+
+## Changes
+* Installed mongoose
+* Added configuration to .env for mongodb connection
+* Added mongodb connection before app starts
+* Added graceful mongodb disconnect
+
+## Features
+* App now connects to mongodb
