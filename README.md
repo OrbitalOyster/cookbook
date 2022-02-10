@@ -69,3 +69,15 @@ App now accepting GET requests
 
 ## Features
 * App now connects to mongodb
+
+# 7. Implementing more REST features
+
+## Changes
+* Added Post mongo model
+* Added more REST routes (PATCH, DELETE)
+
+## Features
+* App now saves posts to DB
+
+## Problems
+* Code is hard to navigate
