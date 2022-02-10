@@ -1,6 +1,12 @@
 ### All posts
 GET http://127.0.0.1:13288/posts
 
+### Close server
+GET http://127.0.0.1:13288/close
+
+### Get one post
+GET http://127.0.0.1:13288/posts/INSERT_ID
+
 ### Add new post
 POST http://127.0.0.1:13288/posts
 Content-type: application/json
@@ -9,3 +15,14 @@ Content-type: application/json
   "title": "New post",
   "content": "New content"
 }
+
+### Edit post
+PATCH http://127.0.0.1:13288/posts/INSERT_ID
+Content-type: application/json
+
+{
+  "title": "Altered title"
+}
+
+### Delete post
+DELETE http://127.0.0.1:13288/posts/INSERT_ID

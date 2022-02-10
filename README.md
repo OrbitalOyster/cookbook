@@ -21,21 +21,7 @@ Nothing works
 ## Features
 App now accepting GET requests
 
-# 3. Implementing basic REST features
-
-## Changes
-* JSON support
-* Added POST route
-
-## Features
-* Can now view and add posts
-
-## Problems
-* Cannot store posts
-* Cannot delete posts
-* Cannot edit posts
-
-# 4. Adding basic .env configuration
+# 3. Adding basic .env configuration
 
 ## Changes
 * Installed dotenv
@@ -45,28 +31,53 @@ App now accepting GET requests
 ## Features
 * Configuration file
 
-# 5. Adding mongodb connection
+## Problems
+* App finishes with exit code 130
+
+# 4. Implementing graceful closing
+
+## Changes
+* Added close() function
+* Added /close route
+
+## Features
+* App can now gracefully close
+
+## Problems
+* Can not add/edit/delete posts
+* /close is public
+
+# 5. Implementing basic REST features
+
+## Changes
+* JSON support
+* Added POST route
+
+## Features
+* Can now view and add posts
+
+## Problems
+* Changes are temporary
+
+# 6. Adding mongodb support
 
 ## Changes
 * Installed mongoose
 * Added configuration to .env for mongodb connection
 * Added mongodb connection before app starts
+* Added graceful mongodb disconnect
 
 ## Features
 * App now connects to mongodb
 
-## Problems
-* No graceful disconnect from mongodb
-
-# 6. Adding SIGINT handling
+# 7. Implementing more REST features
 
 ## Changes
-* Added express server variable
-* Added server SIGINT handler
+* Added Post mongo model
+* Added more REST routes (PATCH, DELETE)
 
 ## Features
-* App can now properly clean up resources after receiving SIGINT
+* App now saves posts to DB
 
 ## Problems
-* App now finishes with 130 status code (npm script only)
-* Express server doesn't closes in time
+* Code is hard to navigate
