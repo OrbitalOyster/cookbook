@@ -81,3 +81,10 @@ App now accepting GET requests
 
 ## Problems
 * Code is hard to navigate
+
+# 8. Refactoring
+
+## Changes
+* Moved all express logic to router.js
+* Moved all DB logic to mongo.js
+* Moved all route logic to routes folder
